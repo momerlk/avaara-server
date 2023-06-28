@@ -1,4 +1,4 @@
-module oserver
+module github.com/momerlk/avaara-server
 
 go 1.18
 
@@ -6,7 +6,6 @@ require (
 	github.com/alexedwards/scs v1.4.1
 	github.com/gobwas/ws v1.2.1
 	github.com/google/uuid v1.3.0
-	github.com/gorilla/websocket v1.5.0
 	github.com/rs/cors v1.9.0
 	go.mongodb.org/mongo-driver v1.11.7
 )
