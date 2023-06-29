@@ -56,6 +56,8 @@ func main(){
 	c := cors.New(cors.Options{
 		AllowedOrigins: []string{
 			"http://localhost:3000",
+			"http://192.168.8.100:5173",
+			"http://localhost:5173",
 			"http://localhost:8081",
 			"http://localhost:19006",
 		},

@@ -120,6 +120,7 @@ GET(w , r , func(w http.ResponseWriter , r *http.Request){
 })
 }
 
+// TODO : Add immediate broadcasting to clients in websocket
 
 // DirectsReceive : format for receiving data from websocket
 type DirectsReceive struct {
