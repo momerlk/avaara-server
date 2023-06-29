@@ -105,9 +105,17 @@ func (a *Application) RenderDirects(userId string , msgs []structs.DirectMessage
 			})
 	}
 
+	var selfVal RenderedDirectSelf
+	if self == nil {
+		a.Debugln("RenderDirects : self = nil")
+		selfVal = RenderedDirectSelf{}
+	} else {
+		selfVal = *self
+	}
+
 	// response of the direct
 	resp := RenderedDirects {
-		Self : *self,
+		Self : selfVal,
 		Directs : directs,
 		Keys : keys.Values,
 	}
